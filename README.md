@@ -25,3 +25,17 @@
   <h3>Unichat Course</h3>
   <p>Content for Unichat Course.</p>
 </div>
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  currentTab: string = 'AngularList';
+
+  openTab(tabName: string) {
+    this.currentTab = tabName;
+  }
+}
